@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #E5E5E5;
+}
+.app{
+    width: fit-content;
+    margin: 0 auto;
+    font-family: inter;
+}
+header{
+    height: 55px;
+    width: 550px;
+    background-color: #F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: inter;
+    letter-spacing: -7.5%;
+    font-size: 15px;
+}
+.header--earth{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+main {
+    background-color: #fff;
+    color: #2B283A;
+    font-size: 11px;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    width: 550px;
+}
+.main--image{
+    height: 168px;
+    width: 125px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.location{
+    display: flex;
+    margin-bottom: 12px;
+}
+.location--icon{
+    width: 7px;
+    height: 10px;
+    margin-right: 5px;
+}
+.main--country{
+    letter-spacing: 17%;
+    margin-right: 15px;
+}
+.map--link{
+    color: #918E9B;
+    text-decoration: underline;
+}
+.main--title{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.main--date{
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+.main--description{
+    line-height: 150%;
+}

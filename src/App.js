@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Earth_icon from './images/svg/earth-africa.svg'
+import Page from './component/Content'
+import data from './Data'
 
-function App() {
+function App(){
+  const newData = data.map(items =>{
+    return(
+      <Page 
+        key={items.location}
+        title = {items.title}
+        location = {items.location}
+        googleMapsUrl = {items.googleMapsUrl}
+        startDate = {items.startDate}
+        endDate = {items.endDate}
+        description = {items.description}
+        imageUrl = {items.imageUrl}
+      />
+    )
+ })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className = "app">
+      <Header />
+      {newData}
     </div>
   );
 }
+
+function Header(){
+  return(
+    <header>
+      <img src={Earth_icon} className='header--earth' />
+      <p className='header--title'>my travel journal</p>
+    </header>
+  )    
+}
+
 
 export default App;
